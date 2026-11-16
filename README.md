@@ -1,5 +1,7 @@
 # config-schemas
 
+[![Ask DeepWiki](https://deepwiki.com/badge.svg)](https://deepwiki.com/Vulnetix/config-schemas)
+
 JSON Schemas (draft 2020-12) for every Vulnetix config-as-code kind: the documents `vulnetix config apply` reads from `.vulnetix/config/`, the Terraform provider manages, and the console's "Download as code" writes. This repository is the source of truth; the config engine, the CLI and the provider import it pinned to a release.
 
 Reference documentation for every kind is at https://docs.vulnetix.com (the Platform IaC segment).
