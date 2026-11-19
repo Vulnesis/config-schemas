@@ -1,4 +1,4 @@
-# yaml-language-server: $schema=https://github.com/Vulnetix/config-schemas/releases/latest/download/LibraryItem.schema.json
+# yaml-language-server: $schema=https://github.com/Vulnesis/config-schemas/releases/latest/download/LibraryItem.schema.json
 apiVersion: vulnetix.com/v1
 kind: LibraryItem
 metadata:
@@ -25,7 +25,7 @@ spec:
     - path: scripts/allow.txt
       file: hooks/install-guard/allow.txt
 ---
-# yaml-language-server: $schema=https://github.com/Vulnetix/config-schemas/releases/latest/download/LibraryItem.schema.json
+# yaml-language-server: $schema=https://github.com/Vulnesis/config-schemas/releases/latest/download/LibraryItem.schema.json
 apiVersion: vulnetix.com/v1
 kind: LibraryItem
 metadata:

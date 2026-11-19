@@ -1,6 +1,6 @@
 {
   "$schema": "https://json-schema.org/draft/2020-12/schema",
-  "$id": "https://github.com/Vulnetix/config-schemas/releases/download/v0.0.0-dev/Campaign.schema.json",
+  "$id": "https://github.com/Vulnesis/config-schemas/releases/download/v0.0.0-dev/Campaign.schema.json",
   "title": "Campaign",
   "x-vulnetix": {"validateOnly":false,"singleton":false,"dependsOn":[],"secrets":[],"celFields":[]},
   "description": "A remediation campaign: a named, time-boxed push to drive a chosen set of vulnerabilities, dependencies or repositories to a defined done state. The scope chooses the cohort, the done criteria decide when each member of it is closed, and the campaign records which members were admitted, when, and what later scan closed each one. What a campaign has achieved is runtime state, reported in status and never declared: its cohort, progress, freeze time and whether it has completed. The cohort is evaluated after apply, the first time the campaign is opened or refreshed. The repositories the scope and the criteria name must resolve when the document is applied, as they must when the console saves a campaign. Removing the document archives the campaign rather than deleting it, so the record of what was committed to, and whether it happened, is kept; an archived campaign is no longer part of the tenant's config, and applying the document again starts a new campaign.",

@@ -1,6 +1,6 @@
 {
   "$schema": "https://json-schema.org/draft/2020-12/schema",
-  "$id": "https://github.com/Vulnetix/config-schemas/releases/download/v0.0.0-dev/TeaCollection.schema.json",
+  "$id": "https://github.com/Vulnesis/config-schemas/releases/download/v0.0.0-dev/TeaCollection.schema.json",
   "title": "TeaCollection",
   "x-vulnetix": {"validateOnly":false,"singleton":false,"dependsOn":["TeaProduct","TeaComponent"],"secrets":[],"celFields":[]},
   "description": "The collection of one published release: the versioned set of artifacts (SBOMs, VEX documents, attestations) TEA serves for it. TEA gives a collection the UUID of its release, so a collection exists only for a release a CI pipeline has already published, and plan fails until it has been. Declaring the collection makes sure it exists and gives a TeaAccessPolicy something to name, such as an embargo on one release. The artifacts are runtime data: CI adds them, and each addition moves the collection's version on, which status reports and which is not a change to this document. A collection this document creates starts at version 1 with the update reason INITIAL_RELEASE; one CI created first is adopted as it is. Removing the document deletes the collection while it has never held an artifact; otherwise the collection stays with its release and only the config management of it ends.",

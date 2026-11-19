@@ -1,6 +1,6 @@
 {
   "$schema": "https://json-schema.org/draft/2020-12/schema",
-  "$id": "https://github.com/Vulnetix/config-schemas/releases/download/v0.0.0-dev/Organization.schema.json",
+  "$id": "https://github.com/Vulnesis/config-schemas/releases/download/v0.0.0-dev/Organization.schema.json",
   "title": "Organization",
   "x-vulnetix": {"validateOnly":false,"singleton":true,"dependsOn":[],"secrets":[],"celFields":[]},
   "description": "The organisation's own settings: its display name, its company email domains and whether Drift protection is on. One per tenant, named default. A field left out is left as it is. Applying needs an owner or admin. Deleting the document only stops managing these settings: the organisation itself is never deleted, and the settings keep their values.",

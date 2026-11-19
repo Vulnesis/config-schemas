@@ -1,4 +1,4 @@
-# yaml-language-server: $schema=https://github.com/Vulnetix/config-schemas/releases/latest/download/SavedSearch.schema.json
+# yaml-language-server: $schema=https://github.com/Vulnesis/config-schemas/releases/latest/download/SavedSearch.schema.json
 apiVersion: vulnetix.com/v1
 kind: SavedSearch
 metadata:
@@ -15,7 +15,7 @@ spec:
     | where qname endswith ('.duckdns.org', '.no-ip.org', '.ddns.net')
   rangeMs: 86400000
 ---
-# yaml-language-server: $schema=https://github.com/Vulnetix/config-schemas/releases/latest/download/SavedSearch.schema.json
+# yaml-language-server: $schema=https://github.com/Vulnesis/config-schemas/releases/latest/download/SavedSearch.schema.json
 apiVersion: vulnetix.com/v1
 kind: SavedSearch
 metadata:

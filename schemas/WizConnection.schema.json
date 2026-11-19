@@ -1,6 +1,6 @@
 {
   "$schema": "https://json-schema.org/draft/2020-12/schema",
-  "$id": "https://github.com/Vulnetix/config-schemas/releases/download/v0.0.0-dev/WizConnection.schema.json",
+  "$id": "https://github.com/Vulnesis/config-schemas/releases/download/v0.0.0-dev/WizConnection.schema.json",
   "title": "WizConnection",
   "x-vulnetix": {"validateOnly":false,"singleton":true,"dependsOn":[],"secrets":["spec.clientSecret"],"celFields":[]},
   "description": "The Wiz service account the tenant authorised. One per tenant. Wiz is connected as an addition to AWS: each claim Wiz makes is checked from inside the AWS account, so a plan is refused until AWS is connected, and on a plan without cloud integrations. Apply checks the credential against Wiz before it is stored, including that the service account can read audit data (admin:audit). The client secret is kept in the tenant's vault and is never exported, shown in a plan or returned by any endpoint. A connection is created and deleted, never edited: any change replaces it (the old connection is deleted and its stored secret revoked, then the new one is created and checked). Deleting the document disconnects Wiz and stops the sync; findings already ingested from Wiz, and their triage history, are kept.",

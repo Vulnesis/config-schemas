@@ -1,4 +1,4 @@
-# yaml-language-server: $schema=https://github.com/Vulnetix/config-schemas/releases/latest/download/ScheduledReport.schema.json
+# yaml-language-server: $schema=https://github.com/Vulnesis/config-schemas/releases/latest/download/ScheduledReport.schema.json
 apiVersion: vulnetix.com/v1
 kind: ScheduledReport
 metadata:
@@ -28,7 +28,7 @@ spec:
     link: true
     query: true
 ---
-# yaml-language-server: $schema=https://github.com/Vulnetix/config-schemas/releases/latest/download/ScheduledReport.schema.json
+# yaml-language-server: $schema=https://github.com/Vulnesis/config-schemas/releases/latest/download/ScheduledReport.schema.json
 apiVersion: vulnetix.com/v1
 kind: ScheduledReport
 metadata:

@@ -1,6 +1,6 @@
 {
   "$schema": "https://json-schema.org/draft/2020-12/schema",
-  "$id": "https://github.com/Vulnetix/config-schemas/releases/download/v0.0.0-dev/FactoryTrigger.schema.json",
+  "$id": "https://github.com/Vulnesis/config-schemas/releases/download/v0.0.0-dev/FactoryTrigger.schema.json",
   "title": "FactoryTrigger",
   "x-vulnetix": {"validateOnly":false,"singleton":false,"dependsOn":["FactoryWorkflow"],"secrets":[],"celFields":[]},
   "description": "Something that starts a Software Factory workflow: a GitHub webhook event, a finding, an issue label, a kanban card move, a firewall sighting, or a person pressing Run. A trigger is a trigger node in the workflow's graph whose id is metadata.name (at most 40 characters), so applying one saves and publishes a new version of the workflow, the same as adding the trigger in the workflow builder; the workflow must be published and must not hold an unpublished draft. A trigger node the workflow already has under that id is adopted. A schedule is a FactorySchedule. Conditions are typed fields: the console takes no expression for a trigger. A trigger is on while its workflow is on. Removing the document removes the node and publishes the workflow again.",

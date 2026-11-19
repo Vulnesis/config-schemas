@@ -1,4 +1,4 @@
-# yaml-language-server: $schema=https://github.com/Vulnetix/config-schemas/releases/latest/download/VaultEntry.schema.json
+# yaml-language-server: $schema=https://github.com/Vulnesis/config-schemas/releases/latest/download/VaultEntry.schema.json
 # An Anthropic key for the AI Firewall and two sandboxes, an environment
 # variable for every Belai host but one, and the OpenAI admin key the vault
 # rotates provider keys with.

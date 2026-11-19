@@ -1,6 +1,6 @@
 {
   "$schema": "https://json-schema.org/draft/2020-12/schema",
-  "$id": "https://github.com/Vulnetix/config-schemas/releases/download/v0.0.0-dev/FactoryBudget.schema.json",
+  "$id": "https://github.com/Vulnesis/config-schemas/releases/download/v0.0.0-dev/FactoryBudget.schema.json",
   "title": "FactoryBudget",
   "x-vulnetix": {"validateOnly":false,"singleton":false,"dependsOn":["FactoryWorkflow"],"secrets":[],"celFields":[]},
   "description": "A Software Factory budget: a limit on the tokens or calls the factory spends, for the whole factory, one GitHub organisation, one repository, one workflow or one step, with alerts and an action at the limit. metadata.name is the budget's name in the console. One budget per scope and provider. The Factory budget (the whole factory, per month, every provider) is set with the budget settings of FactorySettings, not here. Removing the document deletes the budget; its ledger is kept.",

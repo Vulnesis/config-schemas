@@ -1,4 +1,4 @@
-# yaml-language-server: $schema=https://github.com/Vulnetix/config-schemas/releases/latest/download/PackageList.schema.json
+# yaml-language-server: $schema=https://github.com/Vulnesis/config-schemas/releases/latest/download/PackageList.schema.json
 apiVersion: vulnetix.com/v1
 kind: PackageList
 metadata:
@@ -23,7 +23,7 @@ spec:
       scope: bad_actor
       reason: Maintainer attribution reviewed and judged a false positive.
 ---
-# yaml-language-server: $schema=https://github.com/Vulnetix/config-schemas/releases/latest/download/PackageList.schema.json
+# yaml-language-server: $schema=https://github.com/Vulnesis/config-schemas/releases/latest/download/PackageList.schema.json
 apiVersion: vulnetix.com/v1
 kind: PackageList
 metadata:

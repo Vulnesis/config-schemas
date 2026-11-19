@@ -1,6 +1,6 @@
 {
   "$schema": "https://json-schema.org/draft/2020-12/schema",
-  "$id": "https://github.com/Vulnetix/config-schemas/releases/download/v0.0.0-dev/common.schema.json",
+  "$id": "https://github.com/Vulnesis/config-schemas/releases/download/v0.0.0-dev/common.schema.json",
   "title": "Vulnesis config: shared definitions",
   "description": "Definitions every Vulnesis config kind refers to. Not a document kind itself.",
   "$defs": {

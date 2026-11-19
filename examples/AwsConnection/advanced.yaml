@@ -1,4 +1,4 @@
-# yaml-language-server: $schema=https://github.com/Vulnetix/config-schemas/releases/latest/download/AwsConnection.schema.json
+# yaml-language-server: $schema=https://github.com/Vulnesis/config-schemas/releases/latest/download/AwsConnection.schema.json
 # A tenant has one AwsConnection. These are the two forms it can take:
 # IAM Identity Center (sso) or a long-lived IAM user key (iamUser).
 apiVersion: vulnetix.com/v1

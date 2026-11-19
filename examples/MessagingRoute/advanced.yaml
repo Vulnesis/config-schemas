@@ -1,4 +1,4 @@
-# yaml-language-server: $schema=https://github.com/Vulnetix/config-schemas/releases/latest/download/MessagingRoute.schema.json
+# yaml-language-server: $schema=https://github.com/Vulnesis/config-schemas/releases/latest/download/MessagingRoute.schema.json
 # The connections and the template are declared in MessagingConnection and
 # MessagingTemplate documents of the same apply.
 apiVersion: vulnetix.com/v1

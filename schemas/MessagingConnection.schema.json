@@ -1,6 +1,6 @@
 {
   "$schema": "https://json-schema.org/draft/2020-12/schema",
-  "$id": "https://github.com/Vulnetix/config-schemas/releases/download/v0.0.0-dev/MessagingConnection.schema.json",
+  "$id": "https://github.com/Vulnesis/config-schemas/releases/download/v0.0.0-dev/MessagingConnection.schema.json",
   "title": "MessagingConnection",
   "x-vulnetix": {"validateOnly":false,"singleton":false,"dependsOn":[],"secrets":["spec.jira.apiToken","spec.url"],"celFields":[]},
   "description": "One destination the messaging centre can send to: a Slack channel, a Microsoft Teams workflow, a Discord or Google Chat incoming webhook, a Jira site, or a signed webhook. MessagingRoute targets, AlertTrigger, ScheduledReport and DetectionRule actions name it by metadata.name. Its credential (a webhook URL, a Jira API token, a Slack bot token) is kept in the tenant's secrets vault as a connector entry, never in the document, an export or a plan. A slack connection is authorized in a browser: apply returns status.phase AwaitingAuthorization and status.authorizationUrl, and the connection sends nothing until a person installs the Vulnesis Slack app from that URL. The type and a Jira site cannot change; declare a new connection under another name instead. Deleting it revokes its vault entry and removes it from every route that targets it. GitHub Issues connections come from the GitHub App installation and cannot be declared here, but a route can still target one by the name export gives it.",

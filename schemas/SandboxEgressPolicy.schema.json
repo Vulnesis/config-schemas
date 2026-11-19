@@ -1,6 +1,6 @@
 {
   "$schema": "https://json-schema.org/draft/2020-12/schema",
-  "$id": "https://github.com/Vulnetix/config-schemas/releases/download/v0.0.0-dev/SandboxEgressPolicy.schema.json",
+  "$id": "https://github.com/Vulnesis/config-schemas/releases/download/v0.0.0-dev/SandboxEgressPolicy.schema.json",
   "title": "SandboxEgressPolicy",
   "x-vulnetix": {"validateOnly":false,"singleton":false,"dependsOn":[],"secrets":[],"celFields":[]},
   "description": "The outbound network policy of one Pix sandbox: its egress mode and the hostnames allowed or denied, the same two things the console's egress page sets. Egress is decided by hostname only, as the sandbox enforces it: a rule is a DNS name or a *. wildcard over one, never an address or a port. The hosts the sandbox needs for itself cannot be declared. A host decided in the console and left out of the document goes back to undecided on apply. Only an owner or admin can change it. Deleting the document resets the mode to inherit and every decision to undecided; the record of the hosts the sandbox reached stays.",

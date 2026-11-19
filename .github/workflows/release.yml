@@ -2,7 +2,7 @@ name: Release schemas
 
 # Pushing a tag vMAJOR.MINOR.PATCH publishes that version. The release assets
 # are the canonical schema URLs:
-#   https://github.com/Vulnetix/config-schemas/releases/download/<tag>/<Kind>.schema.json
+#   https://github.com/Vulnesis/config-schemas/releases/download/<tag>/<Kind>.schema.json
 # and /releases/latest/download/<Kind>.schema.json follows the newest release.
 #
 # A tag whose release job failed is recovered by running this workflow by hand

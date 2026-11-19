@@ -1,6 +1,6 @@
 {
   "$schema": "https://json-schema.org/draft/2020-12/schema",
-  "$id": "https://github.com/Vulnetix/config-schemas/releases/download/v0.0.0-dev/TeaPublicationTarget.schema.json",
+  "$id": "https://github.com/Vulnesis/config-schemas/releases/download/v0.0.0-dev/TeaPublicationTarget.schema.json",
   "title": "TeaPublicationTarget",
   "x-vulnetix": {"validateOnly":false,"singleton":false,"dependsOn":[],"secrets":["spec.credential"],"celFields":[]},
   "description": "A remote TEA server the tenant is willing to mirror published objects to, registered once so it can be reviewed, rather than named by URL in each access policy. Mirroring is a copy the receiving server then governs. This server does not mirror yet: the target is registered and kept, plan warns that nothing is copied to it, and the publisher API still refuses publishTo. The server derives the target's TEI domain from rootUrl, and a tenant registers each domain once. Removing the document deregisters the target and discards its credential; copies already sent stay where they are.",

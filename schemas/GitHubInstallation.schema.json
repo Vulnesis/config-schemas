@@ -1,6 +1,6 @@
 {
   "$schema": "https://json-schema.org/draft/2020-12/schema",
-  "$id": "https://github.com/Vulnetix/config-schemas/releases/download/v0.0.0-dev/GitHubInstallation.schema.json",
+  "$id": "https://github.com/Vulnesis/config-schemas/releases/download/v0.0.0-dev/GitHubInstallation.schema.json",
   "title": "GitHubInstallation",
   "x-vulnetix": {"validateOnly":false,"singleton":false,"dependsOn":[],"secrets":[],"celFields":[]},
   "description": "Adopts an installation of the Vulnesis GitHub App on github.com, so that configuration as code can name it and depend on it. The App itself is installed on GitHub, in a browser, by someone who administers the account; this document cannot install it. Apply only links an installation the tenant already has: a plan for an installation id the tenant does not have is refused, with the link to install the App. Which repositories the installation reaches, and its permissions, are chosen on GitHub and reported read-only in the object's status (account, repository selection, repository count). Deleting the document lets go of the installation; it does not uninstall the App, which stays installed and in use until it is removed on GitHub.",

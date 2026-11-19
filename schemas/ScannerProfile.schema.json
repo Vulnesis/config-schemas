@@ -1,6 +1,6 @@
 {
   "$schema": "https://json-schema.org/draft/2020-12/schema",
-  "$id": "https://github.com/Vulnetix/config-schemas/releases/download/v0.0.0-dev/ScannerProfile.schema.json",
+  "$id": "https://github.com/Vulnesis/config-schemas/releases/download/v0.0.0-dev/ScannerProfile.schema.json",
   "title": "ScannerProfile",
   "x-vulnetix": {"validateOnly":false,"singleton":true,"dependsOn":[],"secrets":[],"celFields":[]},
   "description": "Which scanners the Software Factory runs, the SLSA level its builds must reach, and the evidence it keeps. One per tenant. These are the security.scanners, security.scanners.custom, security.slsa_min and security.evidence settings of the factory settings document: applying saves a new revision of that document, with one audit entry per changed setting, and a FactorySettings document never carries them, so the two kinds never write the same setting. A field left out means its default. Deleting the document puts all four settings back to their defaults.",

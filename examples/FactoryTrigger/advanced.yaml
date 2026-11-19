@@ -1,4 +1,4 @@
-# yaml-language-server: $schema=https://github.com/Vulnetix/config-schemas/releases/latest/download/FactoryTrigger.schema.json
+# yaml-language-server: $schema=https://github.com/Vulnesis/config-schemas/releases/latest/download/FactoryTrigger.schema.json
 # Each trigger type, and each webhook condition with an event it applies to.
 apiVersion: vulnetix.com/v1
 kind: FactoryTrigger

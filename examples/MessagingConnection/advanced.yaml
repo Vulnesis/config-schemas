@@ -1,4 +1,4 @@
-# yaml-language-server: $schema=https://github.com/Vulnetix/config-schemas/releases/latest/download/MessagingConnection.schema.json
+# yaml-language-server: $schema=https://github.com/Vulnesis/config-schemas/releases/latest/download/MessagingConnection.schema.json
 # One connection of each shape. Credentials are read from the environment by
 # the client and kept in the tenant's secrets vault.
 apiVersion: vulnetix.com/v1

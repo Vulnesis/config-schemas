@@ -1,6 +1,6 @@
 {
   "$schema": "https://json-schema.org/draft/2020-12/schema",
-  "$id": "https://github.com/Vulnetix/config-schemas/releases/download/v0.0.0-dev/SsvcPolicy.schema.json",
+  "$id": "https://github.com/Vulnesis/config-schemas/releases/download/v0.0.0-dev/SsvcPolicy.schema.json",
   "title": "SsvcPolicy",
   "x-vulnetix": {"validateOnly":false,"singleton":true,"dependsOn":[],"secrets":[],"celFields":[{"path":"spec.exploitation.active","env":"finding"},{"path":"spec.exploitation.poc","env":"finding"},{"path":"spec.automatable","env":"finding"},{"path":"spec.technicalImpact","env":"finding"},{"path":"spec.overrides[].when","env":"finding"}]},
   "description": "How the tenant makes its CISA SSVC decision (https://www.cisa.gov/stakeholder-specific-vulnerability-categorization-ssvc) for a finding: Track, Track*, Attend or Act. The decision table is the CISA Coordinator table 2.0.3 and is fixed: four decision points (exploitation, automatable, technical impact, mission and well-being) go in. This document configures how Vulnesis's signals become those four values (CEL over the finding variables, and the repository's criticality for mission and well-being), which table cells the organisation reads differently (mapping), which findings it decides by rule instead (overrides), and what each outcome asks of it (outcomes). A field left out takes the default, which is the policy of a tenant with no document. One per tenant.",

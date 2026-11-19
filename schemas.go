@@ -34,7 +34,7 @@ const APIVersion = "vulnetix.com/v1"
 const DevVersion = "v0.0.0-dev"
 
 // BaseURL is where released schemas are served: <BaseURL>/<version>/<file>.
-const BaseURL = "https://github.com/Vulnetix/config-schemas/releases/download"
+const BaseURL = "https://github.com/Vulnesis/config-schemas/releases/download"
 
 // sharedFiles hold definitions, not document kinds.
 var sharedFiles = map[string]bool{"common.schema.json": true}

@@ -1,6 +1,6 @@
 {
   "$schema": "https://json-schema.org/draft/2020-12/schema",
-  "$id": "https://github.com/Vulnetix/config-schemas/releases/download/v0.0.0-dev/FactorySchedule.schema.json",
+  "$id": "https://github.com/Vulnesis/config-schemas/releases/download/v0.0.0-dev/FactorySchedule.schema.json",
   "title": "FactorySchedule",
   "x-vulnetix": {"validateOnly":false,"singleton":false,"dependsOn":["FactoryWorkflow"],"secrets":[],"celFields":[]},
   "description": "A cron schedule that starts a Software Factory workflow: a cron trigger node in the workflow's graph whose id is metadata.name (at most 40 characters). Applying one saves and publishes a new version of the workflow, the same as adding the schedule on the Schedules tab, and creates or updates the timer that fires it; the workflow must be published and must not hold an unpublished draft. A cron trigger node the workflow already has under that id is adopted. Removing the document removes the node and its timer and publishes the workflow again.",

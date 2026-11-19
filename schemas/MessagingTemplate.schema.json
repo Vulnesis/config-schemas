@@ -1,6 +1,6 @@
 {
   "$schema": "https://json-schema.org/draft/2020-12/schema",
-  "$id": "https://github.com/Vulnetix/config-schemas/releases/download/v0.0.0-dev/MessagingTemplate.schema.json",
+  "$id": "https://github.com/Vulnesis/config-schemas/releases/download/v0.0.0-dev/MessagingTemplate.schema.json",
   "title": "MessagingTemplate",
   "x-vulnetix": {"validateOnly":false,"singleton":false,"dependsOn":[],"secrets":[],"celFields":[]},
   "description": "An organisation's own message template, which a MessagingRoute uses instead of the system template for the event type. One template renders for every provider: Slack, Teams, Discord and Google Chat get the title, summary, body, fields, actions and accent; Jira and GitHub Issues get the issue fields; a signed webhook gets the rendered text and, when asked, the event payload. Every text field is a Go text/template run in a sandbox: only the messaging functions are allowed, every value is escaped, and sizes are capped. Plan compiles each field and refuses a template with errors. Every change to content is saved as a new version, noted as applied as code, as a console edit is; earlier versions stay in the template's history. Deleting it is refused while a route outside this apply still uses it.",

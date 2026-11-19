@@ -1,6 +1,6 @@
 {
   "$schema": "https://json-schema.org/draft/2020-12/schema",
-  "$id": "https://github.com/Vulnetix/config-schemas/releases/download/v0.0.0-dev/VaultEntry.schema.json",
+  "$id": "https://github.com/Vulnesis/config-schemas/releases/download/v0.0.0-dev/VaultEntry.schema.json",
   "title": "VaultEntry",
   "x-vulnetix": {"validateOnly":false,"singleton":false,"dependsOn":[],"secrets":["spec.value"],"celFields":[]},
   "description": "One secret in the tenant's vault: an AI provider key, an environment variable for Pix sandboxes and Belai hosts, or a provider management key, with the grants that say where it may be used. The value is encrypted with KMS before it is stored, is sent once by the client, and is never exported, shown in a plan or returned by any endpoint. No grant means no access, and inside one entry a deny beats an allow. Two active entries that fill the same slot (a provider for provider keys, a variable name for environment variables) may not cover the same subject: a plan that would create such an overlap is refused. Deleting the document revokes the entry: its value is destroyed and it covers nothing, and the vault keeps a stub with its history. Connector secrets (forge tokens, the Wiz client secret) are not VaultEntry documents: they are created through their integration kinds. Automatic rotation is set up in the console and an apply leaves it as it is.",

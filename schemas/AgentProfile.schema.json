@@ -1,6 +1,6 @@
 {
   "$schema": "https://json-schema.org/draft/2020-12/schema",
-  "$id": "https://github.com/Vulnetix/config-schemas/releases/download/v0.0.0-dev/AgentProfile.schema.json",
+  "$id": "https://github.com/Vulnesis/config-schemas/releases/download/v0.0.0-dev/AgentProfile.schema.json",
   "title": "AgentProfile",
   "x-vulnetix": {"validateOnly":false,"singleton":false,"dependsOn":[],"secrets":[],"celFields":[]},
   "description": "An agent of the organisation's Belai library: the markdown agent definition Belai writes, and the files the agent uses beside it. The profile is identified by the id in the definition's front matter, so the same agent backed up from a host and declared here is one profile, and that id cannot change under a metadata.name. Every apply that changes it saves a new version, as a save in the console does; deleting the document hides the profile and keeps its versions and files. A profile nobody declared is exported under its name.",

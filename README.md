@@ -78,8 +78,8 @@ Each release publishes every schema as a release asset. The asset URL is the sch
 
 | Use | URL |
 |---|---|
-| A pinned version | `https://github.com/Vulnetix/config-schemas/releases/download/v1.0.0/QualityGate.schema.json` |
-| The newest release | `https://github.com/Vulnetix/config-schemas/releases/latest/download/QualityGate.schema.json` |
+| A pinned version | `https://github.com/Vulnesis/config-schemas/releases/download/v1.0.0/QualityGate.schema.json` |
+| The newest release | `https://github.com/Vulnesis/config-schemas/releases/latest/download/QualityGate.schema.json` |
 | Any kind, by its `kind` field | `.../vulnetix-config.schema.json` |
 | The kinds in a release | `.../index.json` |
 
@@ -88,14 +88,14 @@ Every asset has a Sigstore bundle beside it (`<file>.sigstore.json`, keyless, si
 ```sh
 cosign verify-blob QualityGate.schema.json \
   --bundle QualityGate.schema.json.sigstore.json \
-  --certificate-identity-regexp '^https://github.com/Vulnetix/config-schemas/' \
+  --certificate-identity-regexp '^https://github.com/Vulnesis/config-schemas/' \
   --certificate-oidc-issuer https://token.actions.githubusercontent.com
 ```
 
 To validate as you type in an editor with the YAML language server, start a file with:
 
 ```yaml
-# yaml-language-server: $schema=https://github.com/Vulnetix/config-schemas/releases/latest/download/vulnetix-config.schema.json
+# yaml-language-server: $schema=https://github.com/Vulnesis/config-schemas/releases/latest/download/vulnetix-config.schema.json
 ```
 
 ## A document
