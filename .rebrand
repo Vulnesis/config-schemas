@@ -1,11 +1,5 @@
-# scripts/rebrand.py config (Vulnesis/ops). The legacy apiVersion stays
-# accepted (documents written for Vulnetix stay valid); Vulnesis writes vulnes.is/v1.
-keep LegacyAPIVersion = "vulnetix.com/v1"
-keep "vulnes.is/v1", "vulnetix.com/v1"
-keep "vulnes.is/v1","vulnetix.com/v1"
-keep vulnetix.com/v1 is the same format
-keep `vulnetix.com/v1` (the same format
-keep {`{"const":"vulnetix.com/v1"}`
-keep "vulnesis", "vulnetix"
-keep KEV_VULNETIX
-keep x-vulnetix
+# scripts/rebrand.py config (Vulnesis/ops).
+# Shared by both brands: only documents are rebranded; code and published
+# identifiers stay exactly as in Vulnetix.
+docs-only
+keep VULNETIX_
