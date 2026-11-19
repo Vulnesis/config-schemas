@@ -1,10 +1,10 @@
 # config-schemas
 
-[![Ask DeepWiki](https://deepwiki.com/badge.svg)](https://deepwiki.com/Vulnetix/config-schemas)
+[![Ask DeepWiki](https://deepwiki.com/badge.svg)](https://deepwiki.com/Vulnesis/config-schemas)
 
-JSON Schemas (draft 2020-12) for every Vulnetix config-as-code kind: the documents `vulnetix config apply` reads from `.vulnetix/config/`, the Terraform provider manages, and the console's "Download as code" writes. This repository is the source of truth; the config engine, the CLI and the provider import it pinned to a release.
+JSON Schemas (draft 2020-12) for every Vulnesis config-as-code kind: the documents `vulnetix config apply` reads from `.vulnetix/config/`, the Terraform provider manages, and the console's "Download as code" writes. This repository is the source of truth; the config engine, the CLI and the provider import it pinned to a release.
 
-Reference documentation for every kind is at https://docs.vulnetix.com (the Platform IaC segment).
+Reference documentation for every kind is at https://docs.vulnes.is (the Platform IaC segment).
 
 ## Kinds
 
@@ -24,16 +24,16 @@ Reference documentation for every kind is at https://docs.vulnetix.com (the Plat
 | `Suppression` | v1.1.0 | A suppression rule with its scope, OpenVEX justification and expiry. |
 | `VexSource` | v1.1.0 | VEX documents read back as suppression rules, from TEA, S3, git, a path or URLs. |
 | `MalwareIoc` | v1.1.0 | An indicator of compromise the tenant manages. |
-| `ApiSpecSource` | v1.2.0 | Where Vulnetix finds an organisation's OpenAPI and Swagger descriptions. |
+| `ApiSpecSource` | v1.2.0 | Where Vulnesis finds an organisation's OpenAPI and Swagger descriptions. |
 | `LicenseExceptions` | v1.3.0 | Attributed, expiring exceptions to the licence policy, blanket or per package. Also valid as the flat `.vulnetix/license-exceptions.yaml`. Validate only: the server does not store it yet. |
 | `SavedSearch` | v1.3.0 | A Guardian saved search, in the Guardian search language or Sigma. |
 | `DetectionRule` | v1.3.0 | A Guardian alert rule: your own Sigma, a saved search, a countermeasure, a SigmaHQ rule or a built-in indicator rule, with its tuning. |
 | `AlertTrigger` | v1.3.0 | Run a saved search or rule on a schedule and start a workflow, post a message or send an email when it returns rows. |
 | `ScheduledReport` | v1.3.0 | Send a saved search's rows on a calendar, to messaging connections or email. |
 | `LogSource` | v1.3.0 | A way logs reach Guardian: the AWS stack's token, Cloudflare Logpush jobs, or the events API. |
-| `AwsConnection` | v1.3.0 | How Vulnetix reaches the AWS estate: IAM Identity Center or an access key. One per tenant. |
+| `AwsConnection` | v1.3.0 | How Vulnesis reaches the AWS estate: IAM Identity Center or an access key. One per tenant. |
 | `AwsAccount` | v1.3.0 | One connected AWS account, whether it is swept, and its stack deploy. |
-| `CloudSensors` | v1.3.0 | Which AWS-native sources and Vulnetix passes are read, for every account or one. |
+| `CloudSensors` | v1.3.0 | Which AWS-native sources and Vulnesis passes are read, for every account or one. |
 | `DetectionRuleFeed` | v1.3.0 | A published feed of virtual patches, countermeasures and catalogue rules in one format. |
 | `RuntimeSensorPolicy` | v1.3.0 | The configuration runtime sensors enroll with: mode, hold, feeds, forwarding and tamper protection. Since v1.12.0 it also says whether sensors update themselves (`autoUpdate`), , since v1.14.0 whether they may take a new major version (`allowMajorUpdate`), and since v1.19.0 an https release mirror (`updateBaseUrl`). |
 | `Organization` | v1.5.0 | The organisation's display name and company email domains. One per tenant. Since v1.15.0 it also says whether Drift protection is on (`driftProtection`): the console and legacy APIs then refuse changes to settings managed by Platform IaC. |
@@ -41,16 +41,16 @@ Reference documentation for every kind is at https://docs.vulnetix.com (the Plat
 | `ServiceAccount` | v1.5.0 | A CI credential that is not a person. Its API key is returned once, by the apply that creates it. Since v1.17.0 it can hold the `developer` or `owner` role (`role`); `developer` is the credential for Terraform and CI that apply Platform IaC (every kind except `Organization`, `Member`, `ServiceAccount` and `VaultEntry`). v1.16.0 offered `admin` instead; that role is retired, so the schema still reads the word and the server refuses it. |
 | `NotificationDefaults` | v1.5.0 | Which events are pushed to people who have not chosen for themselves. One per tenant. |
 | `VaultEntry` | v1.5.0 | A secret in the tenant's vault (provider key, environment variable or management key) with its grants per surface. The value is sent once and never exported. |
-| `GitHubInstallation` | v1.5.0 | Adopts an installation of the Vulnetix GitHub App by its installation id. The App is installed on GitHub; deleting the document does not uninstall it. |
+| `GitHubInstallation` | v1.5.0 | Adopts an installation of the Vulnesis GitHub App by its installation id. The App is installed on GitHub; deleting the document does not uninstall it. |
 | `ForgeConnection` | v1.5.0 | How the Software Factory reaches GitLab, Gitea, Forgejo or GitHub Enterprise Server: a bot token or a GHES App, and an optional OAuth application for members' own sign-in. |
 | `WizConnection` | v1.5.0 | The Wiz service account, verified from inside the connected AWS account. One per tenant; a change replaces it. |
 | `MessagingConnection` | v1.5.0 | A messaging destination: Slack (authorized in a browser), Teams, Discord, Google Chat, Jira or a signed webhook. Its credential is kept in the secrets vault. |
 | `MessagingRoute` | v1.5.0 | Which events go to which messaging connections, with filters, mentions, template, digest and rate limit. |
 | `MessagingTemplate` | v1.5.0 | An organisation's own message template, compiled at plan and versioned on every change. |
-| `FactorySettings` | v1.6.0 | The Software Factory settings document: autonomy, System One, crews, forge, Pix, budgets, schedules, defaults and delivery settings. One per tenant. Since v1.20.0 `defaults` also has a switch for the repo scout and for each of the 34 Vulnetix CLI workflows (`cli-*`). |
+| `FactorySettings` | v1.6.0 | The Software Factory settings document: autonomy, System One, crews, forge, Pix, budgets, schedules, defaults and delivery settings. One per tenant. Since v1.20.0 `defaults` also has a switch for the repo scout and for each of the 34 Vulnesis CLI workflows (`cli-*`). |
 | `ScannerProfile` | v1.6.0 | The factory's scanners, minimum SLSA level and build evidence. One per tenant. |
 | `FactoryManagedOrg` | v1.6.0 | An organisation or account the Software Factory manages. Which repositories the GitHub App reaches stays on GitHub. |
-| `RepositorySettings` | v1.6.0 | The factory's autonomy, kanban mode, token cap, branch protection, TEA publishing and default workflow opt-outs for one repository. Since v1.7.0 it also carries the repository's asset labels, owner and criticality, which are CEL `finding` variables. Since v1.20.0 `defaultsOff` also names the repo scout and the 34 Vulnetix CLI workflows (`cli-*`). |
+| `RepositorySettings` | v1.6.0 | The factory's autonomy, kanban mode, token cap, branch protection, TEA publishing and default workflow opt-outs for one repository. Since v1.7.0 it also carries the repository's asset labels, owner and criticality, which are CEL `finding` variables. Since v1.20.0 `defaultsOff` also names the repo scout and the 34 Vulnesis CLI workflows (`cli-*`). |
 | `FactoryWorkflow` | v1.6.0 | A Software Factory workflow graph, saved as a new version on every change and published with `publish: true`. Since v1.13.0 a draft (`publish: false`) and a `config-apply` step may have an empty `config`; a published step of any other type still needs one setting. |
 | `FactoryTrigger` | v1.6.0 | A trigger node of a workflow: a webhook event with typed conditions, a finding, a label, a kanban move, a firewall sighting or a manual run. |
 | `FactorySchedule` | v1.6.0 | A cron schedule that starts a workflow, with its time zone and timer. |

@@ -1,4 +1,4 @@
-// Package configschemas embeds the JSON Schemas for every Vulnetix config kind
+// Package configschemas embeds the JSON Schemas for every Vulnesis config kind
 // and validates documents against them.
 //
 // The schemas are the source of truth. The config engine in vdb-site, the
@@ -118,7 +118,7 @@ type Document struct {
 }
 
 // ErrNotADocument is returned for input that has no kind.
-var ErrNotADocument = errors.New("not a Vulnetix config document: no kind")
+var ErrNotADocument = errors.New("not a Vulnesis config document: no kind")
 
 // Decode reads every document in a YAML (or JSON) stream. Empty documents are
 // skipped, so a file of only comments decodes to nothing.

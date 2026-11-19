@@ -15,10 +15,10 @@ spec:
   host: gitlab.example.com
   apiBase: https://gitlab.example.com/api/v4
   account: platform
-  token: { env: VULNETIX_GITLAB_TOKEN }
+  token: { env: VULNESIS_GITLAB_TOKEN }
   oauth:
     clientId: 6f1e2d3c4b5a69788796a5b4c3d2e1f0
-    clientSecret: { env: VULNETIX_GITLAB_OAUTH_SECRET }
+    clientSecret: { env: VULNESIS_GITLAB_OAUTH_SECRET }
 ---
 apiVersion: vulnetix.com/v1
 kind: ForgeConnection
@@ -32,4 +32,4 @@ spec:
     appId: 12
     appSlug: vulnetix
     installationId: 3
-    privateKey: { env: VULNETIX_GHES_APP_KEY }
+    privateKey: { env: VULNESIS_GHES_APP_KEY }

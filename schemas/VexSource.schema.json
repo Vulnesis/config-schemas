@@ -86,7 +86,7 @@
           "default": "keep-last"
         },
         "tea": {
-          "description": "VEX artifacts from a TEA collection, on the Vulnetix TEA publisher or any TEA server. Name exactly one of product, productRelease or collection.",
+          "description": "VEX artifacts from a TEA collection, on the Vulnesis TEA publisher or any TEA server. Name exactly one of product, productRelease or collection.",
           "type": "object",
           "required": ["server"],
           "additionalProperties": false,

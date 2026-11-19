@@ -6,4 +6,4 @@ spec:
   region: us-east-1
   iamUser:
     accessKeyId: AKIAIOSFODNN7EXAMPLE
-    secretAccessKey: { env: VULNETIX_AWS_SECRET_ACCESS_KEY }
+    secretAccessKey: { env: VULNESIS_AWS_SECRET_ACCESS_KEY }

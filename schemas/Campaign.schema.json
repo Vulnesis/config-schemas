@@ -57,7 +57,7 @@
           "additionalProperties": false,
           "properties": {
             "repos": {
-              "description": "The repositories the campaign covers. For a repositories campaign they are the target itself; for the others they narrow it. Each must resolve to a repository Vulnetix holds or can fetch from its forge.",
+              "description": "The repositories the campaign covers. For a repositories campaign they are the target itself; for the others they narrow it. Each must resolve to a repository Vulnesis holds or can fetch from its forge.",
               "type": "array",
               "uniqueItems": true,
               "items": { "$ref": "common.schema.json#/$defs/repository" }
@@ -263,7 +263,7 @@
             "additionalProperties": false,
             "properties": {
               "principal": {
-                "description": "A console member, by their Vulnetix principal UUID.",
+                "description": "A console member, by their Vulnesis principal UUID.",
                 "type": "string",
                 "format": "uuid"
               },

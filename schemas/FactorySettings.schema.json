@@ -41,7 +41,7 @@
           "additionalProperties": false,
           "properties": {
             "interest": {
-              "description": "Which repositories of a managed organisation count as of interest: any_signal (any signal at all), scanned_or_pix (scanned by Vulnetix or cloned in a Pix Sandbox) or watched_only (watched by a member).",
+              "description": "Which repositories of a managed organisation count as of interest: any_signal (any signal at all), scanned_or_pix (scanned by Vulnesis or cloned in a Pix Sandbox) or watched_only (watched by a member).",
               "type": "string",
               "enum": [
                 "any_signal",
@@ -1482,7 +1482,7 @@
               "additionalProperties": false,
               "properties": {
                 "enabled": {
-                  "description": "Whether the onboard to Vulnetix workflows default workflow is on for the tenant. A repository can still opt out with defaultsOff.",
+                  "description": "Whether the onboard to Vulnesis workflows default workflow is on for the tenant. A repository can still opt out with defaultsOff.",
                   "type": "boolean",
                   "default": true
                 }
@@ -1504,7 +1504,7 @@
               "additionalProperties": false,
               "properties": {
                 "enabled": {
-                  "description": "Whether the Vulnetix configuration plan default workflow is on for the tenant. A repository can still opt out with defaultsOff.",
+                  "description": "Whether the Vulnesis configuration plan default workflow is on for the tenant. A repository can still opt out with defaultsOff.",
                   "type": "boolean",
                   "default": true
                 }

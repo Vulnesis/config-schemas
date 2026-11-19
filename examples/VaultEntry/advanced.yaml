@@ -14,7 +14,7 @@ spec:
   type: provider_key
   provider: anthropic
   name: Anthropic production
-  value: { env: VULNETIX_ANTHROPIC_KEY }
+  value: { env: VULNESIS_ANTHROPIC_KEY }
   grants:
     - surface: ai_firewall
       effect: allow
@@ -33,7 +33,7 @@ metadata:
 spec:
   type: env
   name: NPM_TOKEN
-  value: { env: VULNETIX_NPM_TOKEN }
+  value: { env: VULNESIS_NPM_TOKEN }
   grants:
     - surface: belai_host
       all: true
@@ -50,4 +50,4 @@ spec:
   type: management
   provider: openai
   name: OpenAI admin
-  value: { env: VULNETIX_OPENAI_ADMIN_KEY }
+  value: { env: VULNESIS_OPENAI_ADMIN_KEY }

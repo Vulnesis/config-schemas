@@ -3,7 +3,7 @@
   "$id": "https://github.com/Vulnetix/config-schemas/releases/download/v0.0.0-dev/MessagingConnection.schema.json",
   "title": "MessagingConnection",
   "x-vulnetix": {"validateOnly":false,"singleton":false,"dependsOn":[],"secrets":["spec.jira.apiToken","spec.url"],"celFields":[]},
-  "description": "One destination the messaging centre can send to: a Slack channel, a Microsoft Teams workflow, a Discord or Google Chat incoming webhook, a Jira site, or a signed webhook. MessagingRoute targets, AlertTrigger, ScheduledReport and DetectionRule actions name it by metadata.name. Its credential (a webhook URL, a Jira API token, a Slack bot token) is kept in the tenant's secrets vault as a connector entry, never in the document, an export or a plan. A slack connection is authorized in a browser: apply returns status.phase AwaitingAuthorization and status.authorizationUrl, and the connection sends nothing until a person installs the Vulnetix Slack app from that URL. The type and a Jira site cannot change; declare a new connection under another name instead. Deleting it revokes its vault entry and removes it from every route that targets it. GitHub Issues connections come from the GitHub App installation and cannot be declared here, but a route can still target one by the name export gives it.",
+  "description": "One destination the messaging centre can send to: a Slack channel, a Microsoft Teams workflow, a Discord or Google Chat incoming webhook, a Jira site, or a signed webhook. MessagingRoute targets, AlertTrigger, ScheduledReport and DetectionRule actions name it by metadata.name. Its credential (a webhook URL, a Jira API token, a Slack bot token) is kept in the tenant's secrets vault as a connector entry, never in the document, an export or a plan. A slack connection is authorized in a browser: apply returns status.phase AwaitingAuthorization and status.authorizationUrl, and the connection sends nothing until a person installs the Vulnesis Slack app from that URL. The type and a Jira site cannot change; declare a new connection under another name instead. Deleting it revokes its vault entry and removes it from every route that targets it. GitHub Issues connections come from the GitHub App installation and cannot be declared here, but a route can still target one by the name export gives it.",
   "type": "object",
   "required": ["apiVersion", "kind", "metadata", "spec"],
   "additionalProperties": false,
@@ -18,7 +18,7 @@
       "additionalProperties": false,
       "properties": {
         "type": {
-          "description": "The provider. slack: a channel in a workspace that installs the Vulnetix Slack app. teams: a Microsoft Teams Workflows (Power Automate) incoming webhook. discord and google_chat: an incoming webhook. jira: issues in a Jira Cloud site, with an API token. webhook: an HTTPS endpoint of yours that receives each message signed with the Standard Webhooks scheme. It cannot change once the connection exists.",
+          "description": "The provider. slack: a channel in a workspace that installs the Vulnesis Slack app. teams: a Microsoft Teams Workflows (Power Automate) incoming webhook. discord and google_chat: an incoming webhook. jira: issues in a Jira Cloud site, with an API token. webhook: an HTTPS endpoint of yours that receives each message signed with the Standard Webhooks scheme. It cannot change once the connection exists.",
           "type": "string",
           "enum": ["slack", "teams", "discord", "google_chat", "jira", "webhook"]
         },

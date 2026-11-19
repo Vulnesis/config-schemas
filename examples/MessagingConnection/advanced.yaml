@@ -25,7 +25,7 @@ spec:
   type: teams
   displayName: Platform team (Teams)
   url:
-    env: VULNETIX_TEAMS_WEBHOOK_URL
+    env: VULNESIS_TEAMS_WEBHOOK_URL
 ---
 apiVersion: vulnetix.com/v1
 kind: MessagingConnection
@@ -38,7 +38,7 @@ spec:
     siteUrl: https://acme.atlassian.net
     email: appsec-bot@acme.example
     apiToken:
-      env: VULNETIX_JIRA_API_TOKEN
+      env: VULNESIS_JIRA_API_TOKEN
     defaultProjectKey: SEC
     defaultIssueType: Bug
 ---
@@ -51,4 +51,4 @@ spec:
   displayName: SIEM intake
   paused: true
   url:
-    env: VULNETIX_SIEM_WEBHOOK_URL
+    env: VULNESIS_SIEM_WEBHOOK_URL

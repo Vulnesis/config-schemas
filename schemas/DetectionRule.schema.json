@@ -42,7 +42,7 @@
           "$ref": "common.schema.json#/$defs/name"
         },
         "countermeasure": {
-          "description": "A Vulnetix countermeasure of kind SIGMA, by uuid: the virtual patching lane's detection for a vulnerability.",
+          "description": "A Vulnesis countermeasure of kind SIGMA, by uuid: the virtual patching lane's detection for a vulnerability.",
           "type": "string",
           "format": "uuid"
         },

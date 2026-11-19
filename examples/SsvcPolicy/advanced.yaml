@@ -8,7 +8,7 @@ metadata:
   annotations:
     ticket: https://tracker.example.com/SEC-3120
 spec:
-  # How Vulnetix's signals become the four decision points. These are the
+  # How Vulnesis's signals become the four decision points. These are the
   # defaults written out, with a stricter automatable test.
   exploitation:
     active: kev || exploitMaturity in ['active', 'weaponized']

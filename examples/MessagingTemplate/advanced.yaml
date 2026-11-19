@@ -23,11 +23,11 @@ spec:
         value: "{{severityEmoji .event.severity}} {{severityLabel .event.severity}}"
         inline: true
     actions:
-      - label: Open in Vulnetix
+      - label: Open in Vulnesis
         url: "{{.event.url}}"
     accent: "{{.event.severity}}"
     issue:
-      title: "[Vulnetix] {{.event.title}}"
+      title: "[Vulnesis] {{.event.title}}"
       body: "{{.event.title}}"
       labels:
         - vulnetix

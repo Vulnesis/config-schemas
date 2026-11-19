@@ -12,7 +12,7 @@ spec:
   url: https://artifactory.acme.example/artifactory/api/npm/npm-local/
   scope: ["@acme", "@acme-internal"]
   username: vulnetix-scanner
-  secret: { env: VULNETIX_ARTIFACTORY_PASSWORD }
+  secret: { env: VULNESIS_ARTIFACTORY_PASSWORD }
   enabled: true
 ---
 apiVersion: vulnetix.com/v1
@@ -23,4 +23,4 @@ spec:
   ecosystem: oci
   url: registry.acme.example
   scope: [acme/payments, acme/platform]
-  secret: { env: VULNETIX_ACME_REGISTRY_TOKEN }
+  secret: { env: VULNESIS_ACME_REGISTRY_TOKEN }

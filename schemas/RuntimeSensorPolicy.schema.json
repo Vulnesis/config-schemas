@@ -70,7 +70,7 @@
           "default": "15m"
         },
         "feeds": {
-          "description": "The feeds the sensor pulls: a DetectionRuleFeed by name, which the server resolves to its published URL; one of the organization's own indicator feeds, by uuid; or an https URL, which must be a published Vulnetix rule feed (https://vulnetix.com/feeds/<org>/<feed>) or a feed in the sensor feed catalogue. Left out, the profile pulls the catalogue's default feeds; an empty list pulls none.",
+          "description": "The feeds the sensor pulls: a DetectionRuleFeed by name, which the server resolves to its published URL; one of the organization's own indicator feeds, by uuid; or an https URL, which must be a published Vulnesis rule feed (https://vulnes.is/feeds/<org>/<feed>) or a feed in the sensor feed catalogue. Left out, the profile pulls the catalogue's default feeds; an empty list pulls none.",
           "type": "array",
           "maxItems": 20,
           "uniqueItems": true,

@@ -1,6 +1,6 @@
 # cel
 
-Package `github.com/vulnetix/config-schemas/cel` compiles and evaluates the [CEL](https://cel.dev) expressions in Vulnetix config documents: the `when` of jail (and so factory gate), prioritisation and suppression rules, package firewall and AI firewall rules, factory trigger conditions, and detection rule feed selectors. Every expression must return `bool`.
+Package `github.com/vulnetix/config-schemas/cel` compiles and evaluates the [CEL](https://cel.dev) expressions in Vulnesis config documents: the `when` of jail (and so factory gate), prioritisation and suppression rules, package firewall and AI firewall rules, factory trigger conditions, and detection rule feed selectors. Every expression must return `bool`.
 
 The vulnetix CLI and the config engine in vdb-site both use this package and both run the golden vectors in `testdata/vectors`, so a rule gives the same answer in CI as on the server.
 

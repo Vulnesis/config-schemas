@@ -3,7 +3,7 @@
   "$id": "https://github.com/Vulnetix/config-schemas/releases/download/v0.0.0-dev/ComplianceTarget.schema.json",
   "title": "ComplianceTarget",
   "x-vulnetix": {"validateOnly":false,"singleton":false,"dependsOn":[],"secrets":[],"celFields":[{"path":"spec.crypto.allow","env":"cbom"},{"path":"spec.crypto.appliesTo","env":"cbom"}]},
-  "description": "A compliance obligation the organisation holds itself to, and how often Vulnetix measures it. For the report frameworks (eu_ai_act, nist_ai_rmf, iso_42001, owasp_top_10, pci_dss, coverage, exposure, eu_cra, iso_27001, owasp_dsomm) each run creates a compliance report for the period, scoped to the repositories named, through the same machinery as a report made by hand, so the OSCAL export, the evidence and the assessor workflow are unchanged. For the three evaluated targets there is no report: each run stores an evaluation. slsa checks the evidence for a SLSA build level; ssdf checks the NIST SP 800-218 practices Vulnetix holds evidence for; crypto-policy evaluates a cryptography policy, written in CEL over the components of the Cryptography Bill of Materials, against the newest CBOM of each repository in scope. The first run is due when the target is created and later runs follow the cadence. Needs the saas migration 20261228040000_compliance_target; until it is applied, plan refuses a document naming it.",
+  "description": "A compliance obligation the organisation holds itself to, and how often Vulnesis measures it. For the report frameworks (eu_ai_act, nist_ai_rmf, iso_42001, owasp_top_10, pci_dss, coverage, exposure, eu_cra, iso_27001, owasp_dsomm) each run creates a compliance report for the period, scoped to the repositories named, through the same machinery as a report made by hand, so the OSCAL export, the evidence and the assessor workflow are unchanged. For the three evaluated targets there is no report: each run stores an evaluation. slsa checks the evidence for a SLSA build level; ssdf checks the NIST SP 800-218 practices Vulnesis holds evidence for; crypto-policy evaluates a cryptography policy, written in CEL over the components of the Cryptography Bill of Materials, against the newest CBOM of each repository in scope. The first run is due when the target is created and later runs follow the cadence. Needs the saas migration 20261228040000_compliance_target; until it is applied, plan refuses a document naming it.",
   "type": "object",
   "required": ["apiVersion", "kind", "metadata", "spec"],
   "additionalProperties": false,
@@ -67,7 +67,7 @@
           }
         },
         "slsa": {
-          "description": "For framework slsa. Evaluated against the evidence Vulnetix holds: provenance records for the dependencies in scope, signatures and attestations on what the organisation publishes, and the Software Factory's minimum SLSA level (ScannerProfile slsaMin). Level 3 asks for what a hardened build platform leaves behind (verified provenance, witnessed signatures); Vulnetix cannot inspect the platform itself, so a pass says the evidence is there.",
+          "description": "For framework slsa. Evaluated against the evidence Vulnesis holds: provenance records for the dependencies in scope, signatures and attestations on what the organisation publishes, and the Software Factory's minimum SLSA level (ScannerProfile slsaMin). Level 3 asks for what a hardened build platform leaves behind (verified provenance, witnessed signatures); Vulnesis cannot inspect the platform itself, so a pass says the evidence is there.",
           "type": "object",
           "required": ["level"],
           "additionalProperties": false,
@@ -81,7 +81,7 @@
           }
         },
         "ssdf": {
-          "description": "For framework ssdf. Checks the practices of NIST SP 800-218 that Vulnetix holds evidence for; a practice without evidence is not in the count.",
+          "description": "For framework ssdf. Checks the practices of NIST SP 800-218 that Vulnesis holds evidence for; a practice without evidence is not in the count.",
           "type": "object",
           "additionalProperties": false,
           "properties": {

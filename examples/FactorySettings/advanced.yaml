@@ -6,7 +6,7 @@ metadata:
   labels:
     team: platform
   annotations:
-    vulnetix.com/owner: platform@acme.example
+    vulnes.is/owner: platform@acme.example
 spec:
   scope:
     interest: scanned_or_pix

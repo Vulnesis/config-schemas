@@ -80,8 +80,8 @@ vectors:
     want: true
 
   - name: fix available on the default branch only
-    expr: fixAvailability == 'available' && branch == 'main' && repo.startsWith('vulnetix/')
-    input: {fixAvailability: available, branch: main, repo: vulnetix/cli}
+    expr: fixAvailability == 'available' && branch == 'main' && repo.startsWith('vulnesis/')
+    input: {fixAvailability: available, branch: main, repo: vulnesis/cli}
     want: true
 
   - name: comparing a score with a string is a type error

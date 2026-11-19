@@ -28,7 +28,7 @@
           "pattern": "^[a-z0-9][a-z0-9._-]{0,63}$"
         },
         "name": {
-          "description": "For env, the variable name: upper case letters, digits and underscore, starting with a letter or underscore. Names such as PATH, HOME and LD_PRELOAD, and names starting LD_, BELAI_, VULNETIX_, VX_, BASH_ or SSH_, are reserved and refused at plan. A variable's name cannot change: declare a new entry instead. For provider_key and management, the label the console shows: 1 to 64 letters, digits, spaces or . _ : / @ + -.",
+          "description": "For env, the variable name: upper case letters, digits and underscore, starting with a letter or underscore. Names such as PATH, HOME and LD_PRELOAD, and names starting LD_, BELAI_, VULNESIS_, VX_, BASH_ or SSH_, are reserved and refused at plan. A variable's name cannot change: declare a new entry instead. For provider_key and management, the label the console shows: 1 to 64 letters, digits, spaces or . _ : / @ + -.",
           "type": "string",
           "minLength": 1,
           "maxLength": 64
@@ -47,7 +47,7 @@
             "additionalProperties": false,
             "properties": {
               "surface": {
-                "description": "pix_sandbox: Pix sandboxes, by their canonical sandbox id, which survives relaunches. belai_host: self-hosted Belai hosts, by host id. ai_firewall: AI Firewall callers, by the id of the principal that owns the Vulnetix API key making the request.",
+                "description": "pix_sandbox: Pix sandboxes, by their canonical sandbox id, which survives relaunches. belai_host: self-hosted Belai hosts, by host id. ai_firewall: AI Firewall callers, by the id of the principal that owns the Vulnesis API key making the request.",
                 "type": "string",
                 "enum": ["pix_sandbox", "belai_host", "ai_firewall"]
               },
