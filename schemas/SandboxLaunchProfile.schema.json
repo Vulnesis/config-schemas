@@ -1,6 +1,6 @@
 {
   "$schema": "https://json-schema.org/draft/2020-12/schema",
-  "$id": "https://github.com/Vulnesis/config-schemas/releases/download/v0.0.0-dev/SandboxLaunchProfile.schema.json",
+  "$id": "https://github.com/Vulnetix/config-schemas/releases/download/v0.0.0-dev/SandboxLaunchProfile.schema.json",
   "title": "SandboxLaunchProfile",
   "x-vulnetix": {"validateOnly":false,"singleton":false,"dependsOn":[],"secrets":[],"celFields":[]},
   "description": "The launch configuration of one Pix sandbox: what the next launch or relaunch of the sandbox installs and how Belai runs on it. A field left out inherits the product default. The sandbox is bought in the console and never created here; one sandbox has one launch configuration, so a document for a sandbox adopts it. Applying a change marks the sandbox for relaunch. The egress mode is SandboxEgressPolicy's; model providers, provisioning and models keep their own console pages. Only an owner or admin can change it. Deleting the document resets every field it manages to inherit.",

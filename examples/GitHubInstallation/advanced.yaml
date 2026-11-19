@@ -1,5 +1,5 @@
-# yaml-language-server: $schema=https://github.com/Vulnesis/config-schemas/releases/latest/download/GitHubInstallation.schema.json
-# Install the Vulnesis GitHub App on the acme organisation first; this
+# yaml-language-server: $schema=https://github.com/Vulnetix/config-schemas/releases/latest/download/GitHubInstallation.schema.json
+# Install the Vulnetix GitHub App on the acme organisation first; this
 # document adopts that installation.
 apiVersion: vulnetix.com/v1
 kind: GitHubInstallation

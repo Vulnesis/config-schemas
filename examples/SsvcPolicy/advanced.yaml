@@ -1,4 +1,4 @@
-# yaml-language-server: $schema=https://github.com/Vulnesis/config-schemas/releases/latest/download/SsvcPolicy.schema.json
+# yaml-language-server: $schema=https://github.com/Vulnetix/config-schemas/releases/latest/download/SsvcPolicy.schema.json
 apiVersion: vulnetix.com/v1
 kind: SsvcPolicy
 metadata:
@@ -8,7 +8,7 @@ metadata:
   annotations:
     ticket: https://tracker.example.com/SEC-3120
 spec:
-  # How Vulnesis's signals become the four decision points. These are the
+  # How Vulnetix's signals become the four decision points. These are the
   # defaults written out, with a stricter automatable test.
   exploitation:
     active: kev || exploitMaturity in ['active', 'weaponized']

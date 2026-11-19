@@ -1,6 +1,6 @@
 {
   "$schema": "https://json-schema.org/draft/2020-12/schema",
-  "$id": "https://github.com/Vulnesis/config-schemas/releases/download/v0.0.0-dev/Member.schema.json",
+  "$id": "https://github.com/Vulnetix/config-schemas/releases/download/v0.0.0-dev/Member.schema.json",
   "title": "Member",
   "x-vulnetix": {"validateOnly":false,"singleton":false,"dependsOn":[],"secrets":[],"celFields":[]},
   "description": "A person in the organisation, by email address, with their role. Applying a Member for someone who is not yet in the organisation sends them an invitation, the same one the members page sends; the object then reports phase Pending, with the invitation's expiry, until they sign in and accept it. A role change on a member takes effect at once; on a pending invitation it replaces the invitation. Deleting the document revokes an outstanding invitation, or removes the member: their account is deactivated and kept for the audit trail, and they lose access to the organisation. Applying needs an owner, an admin or a developer; a developer grants up to developer and cannot change or remove an owner. An apply that would leave the organisation without an owner, or remove the person applying, is refused.",

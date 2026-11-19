@@ -1,4 +1,4 @@
-# yaml-language-server: $schema=https://github.com/Vulnesis/config-schemas/releases/latest/download/AiFirewallPolicy.schema.json
+# yaml-language-server: $schema=https://github.com/Vulnetix/config-schemas/releases/latest/download/AiFirewallPolicy.schema.json
 # The .vulnetix/ai-firewall.yaml shape vulnetix ai-firewall apply reads: no metadata.name.
 apiVersion: vulnetix.com/v1
 kind: AiFirewallPolicy

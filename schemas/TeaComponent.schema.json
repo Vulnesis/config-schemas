@@ -1,6 +1,6 @@
 {
   "$schema": "https://json-schema.org/draft/2020-12/schema",
-  "$id": "https://github.com/Vulnesis/config-schemas/releases/download/v0.0.0-dev/TeaComponent.schema.json",
+  "$id": "https://github.com/Vulnetix/config-schemas/releases/download/v0.0.0-dev/TeaComponent.schema.json",
   "title": "TeaComponent",
   "x-vulnetix": {"validateOnly":false,"singleton":false,"dependsOn":[],"secrets":[],"celFields":[]},
   "description": "A component the tenant publishes through the Transparency Exchange API (TEA): a part a product is assembled from, such as a service, a library or an installer. Component releases, and the distributions and artifacts under them, are published by CI pipelines and are not declared here; a product release names the component releases it is built from when CI publishes it. A component given the same name as a TeaProduct is the same subject to consumers, who then see one node carrying both identities. The server assigns the component's UUID and TEI and reports them in status. Who may read it is declared with a TeaAccessPolicy; until one exists the component is private. Removing the document deletes the component while no release has been published under it. Once CI has published a release, the component and its releases stay, and only the config management of the component ends.",

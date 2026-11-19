@@ -1,5 +1,5 @@
 # wrong apiVersion
-apiVersion: vulnes.is/v2
+apiVersion: vulnetix.com/v2
 kind: QualityGate
 metadata: {name: default}
 spec: {}

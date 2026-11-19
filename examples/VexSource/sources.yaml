@@ -1,4 +1,4 @@
-# yaml-language-server: $schema=https://github.com/Vulnesis/config-schemas/releases/latest/download/VexSource.schema.json
+# yaml-language-server: $schema=https://github.com/Vulnetix/config-schemas/releases/latest/download/VexSource.schema.json
 apiVersion: vulnetix.com/v1
 kind: VexSource
 metadata:
@@ -16,7 +16,7 @@ spec:
     product: 7f3c1a52-1b8e-4d0e-9c3f-2a6b8e5d4c10
     server: https://tea.acme.example
 ---
-# yaml-language-server: $schema=https://github.com/Vulnesis/config-schemas/releases/latest/download/VexSource.schema.json
+# yaml-language-server: $schema=https://github.com/Vulnetix/config-schemas/releases/latest/download/VexSource.schema.json
 apiVersion: vulnetix.com/v1
 kind: VexSource
 metadata:

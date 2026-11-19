@@ -1,6 +1,6 @@
 // Package ssvc is the CISA Stakeholder-Specific Vulnerability Categorization
 // decision (https://www.cisa.gov/stakeholder-specific-vulnerability-categorization-ssvc)
-// that Vulnesis makes for a finding: four decision points go in, and one of
+// that Vulnetix makes for a finding: four decision points go in, and one of
 // Track, Track*, Attend or Act comes out.
 //
 // The decision points and the table are those of the CISA Coordinator decision
@@ -13,7 +13,7 @@
 //   - Mission and well-being: low, medium or high.
 //
 // The table is fixed. What an organisation configures (see Policy) is how the
-// signals Vulnesis holds about a finding become those four values, which
+// signals Vulnetix holds about a finding become those four values, which
 // outcome a given row means to the organisation, and what each outcome asks of
 // it. The vulnetix SsvcPolicy kind is a Policy as a document.
 package ssvc

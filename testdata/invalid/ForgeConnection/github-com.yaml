@@ -1,4 +1,4 @@
-# github.com connects through the Vulnesis GitHub App, not a forge connection
+# github.com connects through the Vulnetix GitHub App, not a forge connection
 apiVersion: vulnetix.com/v1
 kind: ForgeConnection
 metadata:

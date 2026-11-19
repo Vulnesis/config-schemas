@@ -1,6 +1,6 @@
 {
   "$schema": "https://json-schema.org/draft/2020-12/schema",
-  "$id": "https://github.com/Vulnesis/config-schemas/releases/download/v0.0.0-dev/Crew.schema.json",
+  "$id": "https://github.com/Vulnetix/config-schemas/releases/download/v0.0.0-dev/Crew.schema.json",
   "title": "Crew",
   "x-vulnetix": {"validateOnly":false,"singleton":false,"dependsOn":[],"secrets":[],"celFields":[]},
   "description": "A crew of the organisation's Belai library: a named set of worker agents a host runs together. A crew's display name is unique in the library; a document naming a crew nobody declared adopts it. Members name agent profiles by their name, as the console's crew editor does; whether each exists and is a worker is checked by the host when it installs the crew. Every apply that changes it saves a new version; deleting the document hides the crew and keeps its versions.",

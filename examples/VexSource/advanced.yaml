@@ -1,4 +1,4 @@
-# yaml-language-server: $schema=https://github.com/Vulnesis/config-schemas/releases/latest/download/VexSource.schema.json
+# yaml-language-server: $schema=https://github.com/Vulnetix/config-schemas/releases/latest/download/VexSource.schema.json
 apiVersion: vulnetix.com/v1
 kind: VexSource
 metadata:
@@ -19,7 +19,7 @@ spec:
     product: 7f3c1a52-1b8e-4d0e-9c3f-2a6b8e5d4c10
     server: https://tea.acme.example
 ---
-# yaml-language-server: $schema=https://github.com/Vulnesis/config-schemas/releases/latest/download/VexSource.schema.json
+# yaml-language-server: $schema=https://github.com/Vulnetix/config-schemas/releases/latest/download/VexSource.schema.json
 apiVersion: vulnetix.com/v1
 kind: VexSource
 metadata:
@@ -31,7 +31,7 @@ spec:
     productRelease: "urn:tei:uuid:products.acme.example:4b2e9d17-6a3c-4f81-b5d0-8e1c7a9f2d36"
     server: https://tea.acme.example
 ---
-# yaml-language-server: $schema=https://github.com/Vulnesis/config-schemas/releases/latest/download/VexSource.schema.json
+# yaml-language-server: $schema=https://github.com/Vulnetix/config-schemas/releases/latest/download/VexSource.schema.json
 apiVersion: vulnetix.com/v1
 kind: VexSource
 metadata:
@@ -44,7 +44,7 @@ spec:
     collection: 2c8f4e61-9d7a-4b35-a0e2-5f6c3b8d1e94
     server: https://tea.vendor.example.com
 ---
-# yaml-language-server: $schema=https://github.com/Vulnesis/config-schemas/releases/latest/download/VexSource.schema.json
+# yaml-language-server: $schema=https://github.com/Vulnetix/config-schemas/releases/latest/download/VexSource.schema.json
 apiVersion: vulnetix.com/v1
 kind: VexSource
 metadata:
@@ -60,7 +60,7 @@ spec:
     roleArn: arn:aws:iam::123456789012:role/VulnetixVexRead
     externalId: acme-vex-read-7f3c1a52
 ---
-# yaml-language-server: $schema=https://github.com/Vulnesis/config-schemas/releases/latest/download/VexSource.schema.json
+# yaml-language-server: $schema=https://github.com/Vulnetix/config-schemas/releases/latest/download/VexSource.schema.json
 apiVersion: vulnetix.com/v1
 kind: VexSource
 metadata:
@@ -74,7 +74,7 @@ spec:
     key: products/ledger/ledger.openvex.json
     roleArn: arn:aws:iam::123456789012:role/VulnetixVexRead
 ---
-# yaml-language-server: $schema=https://github.com/Vulnesis/config-schemas/releases/latest/download/VexSource.schema.json
+# yaml-language-server: $schema=https://github.com/Vulnetix/config-schemas/releases/latest/download/VexSource.schema.json
 apiVersion: vulnetix.com/v1
 kind: VexSource
 metadata:
@@ -88,7 +88,7 @@ spec:
     paths: ["vex/**/*.openvex.json", "vex/**/*.cdx.json"]
     credentialRef: github-advisories-token
 ---
-# yaml-language-server: $schema=https://github.com/Vulnesis/config-schemas/releases/latest/download/VexSource.schema.json
+# yaml-language-server: $schema=https://github.com/Vulnetix/config-schemas/releases/latest/download/VexSource.schema.json
 apiVersion: vulnetix.com/v1
 kind: VexSource
 metadata:
@@ -98,7 +98,7 @@ spec:
   path:
     path: .vulnetix/vex.cdx.json
 ---
-# yaml-language-server: $schema=https://github.com/Vulnesis/config-schemas/releases/latest/download/VexSource.schema.json
+# yaml-language-server: $schema=https://github.com/Vulnetix/config-schemas/releases/latest/download/VexSource.schema.json
 apiVersion: vulnetix.com/v1
 kind: VexSource
 metadata:

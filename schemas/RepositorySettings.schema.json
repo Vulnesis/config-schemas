@@ -1,6 +1,6 @@
 {
   "$schema": "https://json-schema.org/draft/2020-12/schema",
-  "$id": "https://github.com/Vulnesis/config-schemas/releases/download/v0.0.0-dev/RepositorySettings.schema.json",
+  "$id": "https://github.com/Vulnetix/config-schemas/releases/download/v0.0.0-dev/RepositorySettings.schema.json",
   "title": "RepositorySettings",
   "x-vulnetix": {"validateOnly":false,"singleton":false,"dependsOn":[],"secrets":[],"celFields":[]},
   "description": "The Software Factory's controls for one repository: the settings panel of the Factory repositories page. The repository must be one the factory can see, through a managed organisation or another signal. metadata.name is the repository lower-cased, with every run of characters other than a to z and 0 to 9 replaced by one hyphen: acme-payments-api for acme/payments-api. A field left out means its default. The asset fields (labels, owner and criticality) describe the repository as an asset of the business: they are stored per repository, shown on the Repositories page, and become the `labels`, `owner` and `criticality` variables of the CEL finding context, so a risk, suppression, jail or gate rule can select on them. They need the saas migration 20261228000000_repository_asset; until it is applied a document that sets one is refused. Deleting the document removes the repository's own settings, so it runs at the tenant's autonomy.default again, removes its monthly token cap and clears its asset fields; the record of the change is kept in the audit trail.",

@@ -1,6 +1,6 @@
 {
   "$schema": "https://json-schema.org/draft/2020-12/schema",
-  "$id": "https://github.com/Vulnesis/config-schemas/releases/download/v0.0.0-dev/TeaProduct.schema.json",
+  "$id": "https://github.com/Vulnetix/config-schemas/releases/download/v0.0.0-dev/TeaProduct.schema.json",
   "title": "TeaProduct",
   "x-vulnetix": {"validateOnly":false,"singleton":false,"dependsOn":[],"secrets":[],"celFields":[]},
   "description": "A product the tenant publishes through the Transparency Exchange API (TEA): the top of the product, release, collection and artifact tree that TEA consumers read. The product itself is config. Its releases, their collections and the artifacts in them are published by CI pipelines as software ships, so they are not declared here. The server assigns the product's UUID and TEI and reports them in status. Who may read the product is declared with a TeaAccessPolicy; until one exists the product is private. Removing the document deletes the product while no release has been published under it. Once CI has published a release, the product and its releases stay, and only the config management of the product ends.",

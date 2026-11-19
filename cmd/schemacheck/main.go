@@ -133,8 +133,8 @@ func release(args []string) error {
 	bundle := map[string]any{
 		"$schema":     "https://json-schema.org/draft/2020-12/schema",
 		"$id":         rel + "vulnetix-config.schema.json",
-		"title":       "Vulnesis config document",
-		"description": "Any Vulnesis config document. Dispatches on kind to that kind's schema.",
+		"title":       "Vulnetix config document",
+		"description": "Any Vulnetix config document. Dispatches on kind to that kind's schema.",
 		"type":        "object",
 		"required":    []string{"apiVersion", "kind"},
 		"properties":  map[string]any{"kind": map[string]any{"enum": configschemas.Kinds()}},

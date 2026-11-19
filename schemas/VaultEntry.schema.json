@@ -1,6 +1,6 @@
 {
   "$schema": "https://json-schema.org/draft/2020-12/schema",
-  "$id": "https://github.com/Vulnesis/config-schemas/releases/download/v0.0.0-dev/VaultEntry.schema.json",
+  "$id": "https://github.com/Vulnetix/config-schemas/releases/download/v0.0.0-dev/VaultEntry.schema.json",
   "title": "VaultEntry",
   "x-vulnetix": {"validateOnly":false,"singleton":false,"dependsOn":[],"secrets":["spec.value"],"celFields":[]},
   "description": "One secret in the tenant's vault: an AI provider key, an environment variable for Pix sandboxes and Belai hosts, or a provider management key, with the grants that say where it may be used. The value is encrypted with KMS before it is stored, is sent once by the client, and is never exported, shown in a plan or returned by any endpoint. No grant means no access, and inside one entry a deny beats an allow. Two active entries that fill the same slot (a provider for provider keys, a variable name for environment variables) may not cover the same subject: a plan that would create such an overlap is refused. Deleting the document revokes the entry: its value is destroyed and it covers nothing, and the vault keeps a stub with its history. Connector secrets (forge tokens, the Wiz client secret) are not VaultEntry documents: they are created through their integration kinds. Automatic rotation is set up in the console and an apply leaves it as it is.",
@@ -28,7 +28,7 @@
           "pattern": "^[a-z0-9][a-z0-9._-]{0,63}$"
         },
         "name": {
-          "description": "For env, the variable name: upper case letters, digits and underscore, starting with a letter or underscore. Names such as PATH, HOME and LD_PRELOAD, and names starting LD_, BELAI_, VULNESIS_, VX_, BASH_ or SSH_, are reserved and refused at plan. A variable's name cannot change: declare a new entry instead. For provider_key and management, the label the console shows: 1 to 64 letters, digits, spaces or . _ : / @ + -.",
+          "description": "For env, the variable name: upper case letters, digits and underscore, starting with a letter or underscore. Names such as PATH, HOME and LD_PRELOAD, and names starting LD_, BELAI_, VULNETIX_, VX_, BASH_ or SSH_, are reserved and refused at plan. A variable's name cannot change: declare a new entry instead. For provider_key and management, the label the console shows: 1 to 64 letters, digits, spaces or . _ : / @ + -.",
           "type": "string",
           "minLength": 1,
           "maxLength": 64
@@ -47,7 +47,7 @@
             "additionalProperties": false,
             "properties": {
               "surface": {
-                "description": "pix_sandbox: Pix sandboxes, by their canonical sandbox id, which survives relaunches. belai_host: self-hosted Belai hosts, by host id. ai_firewall: AI Firewall callers, by the id of the principal that owns the Vulnesis API key making the request.",
+                "description": "pix_sandbox: Pix sandboxes, by their canonical sandbox id, which survives relaunches. belai_host: self-hosted Belai hosts, by host id. ai_firewall: AI Firewall callers, by the id of the principal that owns the Vulnetix API key making the request.",
                 "type": "string",
                 "enum": ["pix_sandbox", "belai_host", "ai_firewall"]
               },

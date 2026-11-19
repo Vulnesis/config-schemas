@@ -1,5 +1,5 @@
 // Package cel compiles and evaluates the CEL (https://cel.dev) expressions in
-// Vulnesis config documents: the `when` of gate, jail, prioritisation and
+// Vulnetix config documents: the `when` of gate, jail, prioritisation and
 // suppression rules, package firewall and AI firewall rules, factory trigger
 // conditions and detection rule feed selectors.
 //

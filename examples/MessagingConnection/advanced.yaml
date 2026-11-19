@@ -1,4 +1,4 @@
-# yaml-language-server: $schema=https://github.com/Vulnesis/config-schemas/releases/latest/download/MessagingConnection.schema.json
+# yaml-language-server: $schema=https://github.com/Vulnetix/config-schemas/releases/latest/download/MessagingConnection.schema.json
 # One connection of each shape. Credentials are read from the environment by
 # the client and kept in the tenant's secrets vault.
 apiVersion: vulnetix.com/v1
@@ -25,7 +25,7 @@ spec:
   type: teams
   displayName: Platform team (Teams)
   url:
-    env: VULNESIS_TEAMS_WEBHOOK_URL
+    env: VULNETIX_TEAMS_WEBHOOK_URL
 ---
 apiVersion: vulnetix.com/v1
 kind: MessagingConnection
@@ -38,7 +38,7 @@ spec:
     siteUrl: https://acme.atlassian.net
     email: appsec-bot@acme.example
     apiToken:
-      env: VULNESIS_JIRA_API_TOKEN
+      env: VULNETIX_JIRA_API_TOKEN
     defaultProjectKey: SEC
     defaultIssueType: Bug
 ---
@@ -51,4 +51,4 @@ spec:
   displayName: SIEM intake
   paused: true
   url:
-    env: VULNESIS_SIEM_WEBHOOK_URL
+    env: VULNETIX_SIEM_WEBHOOK_URL

@@ -1,4 +1,4 @@
-# yaml-language-server: $schema=https://github.com/Vulnesis/config-schemas/releases/latest/download/MessagingTemplate.schema.json
+# yaml-language-server: $schema=https://github.com/Vulnetix/config-schemas/releases/latest/download/MessagingTemplate.schema.json
 apiVersion: vulnetix.com/v1
 kind: MessagingTemplate
 metadata:
@@ -23,11 +23,11 @@ spec:
         value: "{{severityEmoji .event.severity}} {{severityLabel .event.severity}}"
         inline: true
     actions:
-      - label: Open in Vulnesis
+      - label: Open in Vulnetix
         url: "{{.event.url}}"
     accent: "{{.event.severity}}"
     issue:
-      title: "[Vulnesis] {{.event.title}}"
+      title: "[Vulnetix] {{.event.title}}"
       body: "{{.event.title}}"
       labels:
         - vulnetix

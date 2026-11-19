@@ -9,7 +9,7 @@ import (
 	"github.com/vulnetix/config-schemas/cel"
 )
 
-// Policy is an organisation's SSVC configuration: how Vulnesis's signals about
+// Policy is an organisation's SSVC configuration: how Vulnetix's signals about
 // a finding become the four decision points, what the organisation does for a
 // row of the table, and what each outcome asks of it. It is the spec of the
 // SsvcPolicy kind. The zero Policy is not usable; start from DefaultPolicy, or

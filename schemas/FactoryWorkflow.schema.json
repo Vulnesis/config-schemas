@@ -1,6 +1,6 @@
 {
   "$schema": "https://json-schema.org/draft/2020-12/schema",
-  "$id": "https://github.com/Vulnesis/config-schemas/releases/download/v0.0.0-dev/FactoryWorkflow.schema.json",
+  "$id": "https://github.com/Vulnetix/config-schemas/releases/download/v0.0.0-dev/FactoryWorkflow.schema.json",
   "title": "FactoryWorkflow",
   "x-vulnetix": {"validateOnly":false,"singleton":false,"dependsOn":[],"secrets":[],"celFields":[]},
   "description": "A Software Factory workflow: the graph of steps a run walks, from a trigger through scans, decisions, crews, gates and people to its outputs. metadata.name is the workflow's slug (at most 60 characters; slugs that start with sys- belong to the default workflows and cannot be declared). Workflows are versioned: a change to the graph never edits a published version, it saves a new version and, with publish true, publishes it. Triggers and schedules declared as FactoryTrigger and FactorySchedule documents add their own trigger nodes to the graph; those nodes are not part of this document and a graph change keeps them. Removing the document archives the workflow: it is switched off and its triggers removed, and its versions and run history are kept.",

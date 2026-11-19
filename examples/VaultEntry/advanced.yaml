@@ -1,4 +1,4 @@
-# yaml-language-server: $schema=https://github.com/Vulnesis/config-schemas/releases/latest/download/VaultEntry.schema.json
+# yaml-language-server: $schema=https://github.com/Vulnetix/config-schemas/releases/latest/download/VaultEntry.schema.json
 # An Anthropic key for the AI Firewall and two sandboxes, an environment
 # variable for every Belai host but one, and the OpenAI admin key the vault
 # rotates provider keys with.
@@ -14,7 +14,7 @@ spec:
   type: provider_key
   provider: anthropic
   name: Anthropic production
-  value: { env: VULNESIS_ANTHROPIC_KEY }
+  value: { env: VULNETIX_ANTHROPIC_KEY }
   grants:
     - surface: ai_firewall
       effect: allow
@@ -33,7 +33,7 @@ metadata:
 spec:
   type: env
   name: NPM_TOKEN
-  value: { env: VULNESIS_NPM_TOKEN }
+  value: { env: VULNETIX_NPM_TOKEN }
   grants:
     - surface: belai_host
       all: true
@@ -50,4 +50,4 @@ spec:
   type: management
   provider: openai
   name: OpenAI admin
-  value: { env: VULNESIS_OPENAI_ADMIN_KEY }
+  value: { env: VULNETIX_OPENAI_ADMIN_KEY }
