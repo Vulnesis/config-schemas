@@ -10,7 +10,7 @@ permissions:
 
 jobs:
   test:
-    runs-on: [self-hosted, Linux, X64, vulnetix-local]
+    runs-on: [self-hosted, Linux, X64, vulnesis-cf]
     timeout-minutes: 10
     steps:
       # Big Go builds overflow the runner's small /tmp; build in the job's temp.
